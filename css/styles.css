@@ -1,0 +1,1022 @@
+/* ====================== Stule Guide (colors) ====================== */
+
+/* ====================== Оголошуємо змінні CSS ====================== */
+:root {
+    --primary-brand-color: #4D5AE5;
+    --primary-brand-color-a: rgba(64, 75, 191, 0.9);
+    --pressed-state-color: #404bbf;
+    --hero-text-color: #ffffff;
+    --dark-color: #2e2f42;
+    --dark-color-rgba: rgba(47, 47, 66, 0.5);
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-colors: #F4F4FD;
+    --modal-window: #FCFCFC;
+    
+    --space-under-section: 120px;
+
+    --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+/* ====================== Body global stylea! ====================== */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    color: var(--dark-color);
+}
+
+h1, h2, h3, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul, ol {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+img {
+    display: block;
+    margin-right: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ====================== Text Guide ====================== */
+
+/* Global main paramrters for text */
+.main-text-style {
+    font-style: normal;
+    letter-spacing: 0.02em;
+}
+
+/* H1 style */
+.hero-title {
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.15;    
+    color: var(--hero-text-color);
+}
+
+.fool-title {
+    margin-bottom: 48px;
+}
+
+/* H2 style */
+.title-second {
+    text-align: center;
+    margin-bottom: 72px;
+
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;   
+}
+
+/* H3 style */
+.title-third {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+/* Body text style */
+.small-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+
+/* Body text style 2 */
+.medium-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+/* Footer text */
+.footer-text {
+    min-width: 264px;
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent-color);
+
+}
+
+/* Text style Footwr social media before list of icon */
+.medium-text-footer-social {
+    /* display: block; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: var(--hero-text-color);
+}
+
+/* ====================== Universal Container ====================== */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-singl-pad {
+    padding-top: 120px;   
+}
+
+.section-double-pad {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-f-double-pad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.h-underline {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    overflow: hidden;
+    border: 0px;
+    clip: rect(0 0 0 0);
+}
+
+/* ====================== main page hero button ====================== */
+
+/* Button text style */
+.button-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--primary-brand-color);
+}
+
+/* Hero-button text style */
+.hero-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--hero-text-color);
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: color var(--transition-var), background-color var(--transition-var);
+}
+
+.hero-button:focus,
+.hero-button:hover {
+    color: var(--accent-color);
+    background-color: var(--pressed-state-color);
+}
+
+/* ====================== logo ====================== */
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--primary-brand-color); 
+    text-transform: uppercase;
+}
+
+.logo-studio-h {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    
+}
+
+.logo-studio-f {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--light-colors);
+    text-transform: uppercase;
+}
+
+/* ====================== BG section Colors ====================== */
+/* Page header style */
+.bg-color-h {
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
+    background-color: var(--dark-color);
+}
+
+.bg-color-f {      
+    background-color: var(--dark-color);
+}
+
+/* BG section Our Team */
+.our-team-colors-bg {
+     background-color: var(--light-colors);
+}
+
+
+/* ====================== Link and list ====================== */
+/* Link style */
+.link {
+    font-style: normal;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list {
+    list-style: none;
+}
+/* ====================== Site Navigation ====================== */
+
+/* Main mav */
+
+.main-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.site-nav {
+    /* position: relative; */
+    display: flex;
+    margin-left: 76px;
+}
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    transition: color var(--transition-var);
+    
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-brand-color);    
+}
+
+/* A highlighted link to the active page */
+.site-nav .carrent {
+    color: blue;
+}
+
+.site-nav-item {
+    display: block;
+}
+
+.site-nav-item {
+    position: relative;
+}
+
+.nav-index::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 0 auto; 
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-brand-color);
+    border-radius: 2px;
+}
+
+
+/* ====================== Hero. ====================== */
+
+.hero-bg {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people.jpg);
+    width: 1440px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* ====================== Section 2. Privilegis. ====================== */
+
+.privil-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.privil-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: var(--light-colors);
+    border-radius: 4px;
+}
+
+/* ====================== Section 3. What are we doing. ====================== */
+
+.photo {
+    display: flex;
+}
+
+.photo .item + .item {
+    margin-left: 24px;
+}
+
+/* ====================== Section 4. Our Team. ====================== */
+
+.team-cards {
+    text-align: center;
+    display: flex;
+    
+}
+
+.team-cards .item + .item {
+    margin-left: 24px;
+}
+
+
+.card-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    transition: background-color var(--transition-var);
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+    background-color: var(--pressed-state-color);
+}
+
+.small-text-icon {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.social-list-icon {
+    fill: var(--light-colors);
+}
+/* ====================== Section 5. Customers. ====================== */
+
+.section-double-pad-long-up {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers-list-item {
+    display: flex;
+}
+
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+    transition: border-color var(--transition-var);
+}
+
+.customers-list-icon {
+    fill: var(--subtle-text-color);
+    transition: fill var(--transition-var);
+}
+
+.customers-list-link:focus,
+.customers-list-link:hover {
+    border-color: var(--primary-brand-color);
+   
+}
+
+.customers-list-link:focus .customers-list-icon,
+.customers-list-link:hover .customers-list-icon {
+    fill: var(--primary-brand-color);
+} 
+
+/* ====================== Footer. ====================== */
+
+.logo-footer {
+    padding-bottom: 16px;
+    display: block;
+}
+
+.footer-box {
+    display: flex;
+}
+
+.foter-cosial-media {
+    margin-left: 120px;
+}
+
+.social-list-link-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-var);
+}
+
+.social-list-link-f:focus,
+.social-list-link-f:hover {
+    background-color: var(--success-color);    
+}
+
+.subscribe-form {
+    display: flex;
+    width: 25%;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #fff;
+    outline: 1px solid tomato;
+}
+
+/* Footer subscribe form */
+.footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 88px;
+}
+
+.subscribe-input-btm-block {
+    display: flex;
+}
+
+.footer-input-area {
+    display: flex;
+}
+
+.footer-email-input {
+    position: relative;
+
+    min-width: 264px;
+    height: 40px;
+    
+    padding: 8px 16px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    border: 1px solid #fff;
+    border-radius: 4px; 
+    color: #fff;
+    background-color: var(--dark-color);
+}
+
+.footer-email-input::placeholder {
+    color: #fff;
+}
+
+.subscribe-button {
+    display: flex;
+    margin-left: 24px;
+    
+    min-width: 156px;
+    height: 40px;
+    align-self: center;
+    align-items: center;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--hero-text-color);
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    fill: #fff;
+    transition: background-color var(--transition-var);
+}
+
+.subscribe-btm-icon {
+    margin-left: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/* ====================== Adress Activation ====================== */
+
+.adress-nav {
+    margin-left: auto;
+    display: flex;
+    transition: color var(--transition-var);
+}
+
+.adress-nav .link:hover,
+.adress-nav .link:focus {
+    color: var(--primary-brand-color);
+    
+}
+
+.auth-nav {
+    display: flex;
+}
+
+.auth-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.auth-nav .item + .item {
+    margin-left: 40px;
+}
+/* ====================== Portfolio button menu navigation ====================== */
+
+.element-direction {
+    flex-direction: column;
+}
+
+.b-positionong {
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.btm {
+    display: flex;
+    justify-content: center;
+}
+
+.btm .item + .item {
+    margin-left: 24px;
+}
+
+.button-nav {
+    display: inline-block;
+    padding: 12px 24px;
+
+    height: 48px;
+    color: var(--primary-brand-color);
+    background-color: var(--light-colors);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    transition: color var(--transition-var), background-color var(--transition-var), box-shadow var(--transition-var), border var(--transition-var), border-radius var(--transition-var);
+}
+
+.button-nav:hover,
+.button-nav:focus {
+    color: var(--hero-text-color);
+    background-color: var(--pressed-state-color);
+    border: 1px solid transparent;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    
+}
+
+.wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.overley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 40px 32px;
+    color: var(--light-colors);
+    background-color: var(--primary-brand-color-a);
+
+    transform: translate(0, 100%);
+    transition: transform var(--transition-var);
+}
+
+.card-set .item .link:hover .overley,
+.card-set .item .link:focus .overley {
+    transform: translate(0, 0);
+}
+/* ====================== Portfolio cards ====================== */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin-left: -24px;
+    margin-top: -48px;
+}
+
+.card-set > .item {
+    flex-basis: calc(100% / 3 - 24px);
+}
+
+.card-set-description {    
+    width: 360px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    
+    border: 1px solid var(--accent-color);
+    border-top: 0px;
+    
+}
+
+.card-set .item:hover,
+.card-set .item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
+}
+
+.card-set > .item {
+    margin-left: 24px;
+    margin-top: 48px;
+}
+
+/* ====================== Modal window! ====================== */
+
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color-rgba);
+
+    opacity: 1;
+    transition: opacity var(--transition-var), visibility var(--transition-var);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* --- Стан, коли вікно modal показане --- */
+.modal {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--transition-var);
+
+    min-width: 408px;
+    min-height: 576px;
+    padding: 72px 24px 24px 24px;
+
+    background-color: var(--modal-window);
+border-radius: 4px;
+}
+/* --- Стан, коли вікно modal приховане --- */
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal-close-btm {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background-color: var(--accent-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;    
+    transition: border-color var(--transition-var), background-color var(--transition-var);
+}
+
+.modal-close-btm:hover,
+.modal-close-btm:focus {
+    border-color: var(--subtle-text-color);
+    background-color: var(--primary-brand-color);
+
+}
+
+.modal-close-btm-icon {
+    fill: var(--subtle-text-color);
+    transition: fill var(--transition-var);
+}
+
+.modal-close-btm:hover .modal-close-btm-icon,
+.modal-close-btm:focus .modal-close-btm-icon {
+    fill: var(--light-colors);    
+}
+
+/* ---- Modal form ---- */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.medium-text-modal {
+    /* margin-top: 72px; */
+    text-align: center;
+
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark-color);
+}
+
+.contact-form-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form-label-c {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.contact-form-input {
+    position: relative;
+
+    width: 100%;
+    height: 40px;
+    /* margin-bottom: 8px; */
+    padding-left: 38px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);;
+    border-radius: 4px; 
+    background-color: transparent;
+    transition: border-color var(--transition-var);
+}
+
+.contact-form-input:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+    
+}
+
+.modal-form-input-icon {
+    display: block;
+    
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    transition: fill var(--transition-var);
+}
+
+.contact-form-input:focus + .modal-form-input-icon {
+    fill: var(--primary-brand-color)
+}
+
+.contact-form-btm-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.contact-form-msg {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    
+    resize: none;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(46, 47, 66, 0.4);;
+    border-radius: 4px; 
+    background-color: transparent;
+    transition: border-color var(--transition-var);
+    
+}
+
+.contact-form-msg::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-msg:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+}
+
+.contact-customers-agreement {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.customers-check {
+    display: block;
+}
+
+/* Створюємо кастомний чек-бокс через псевдо елемент */
+.contact-form-text-description-c::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color var(--transition-var), border-color var(--transition-var);
+}
+
+.customers-check:checked + .contact-form-text-description-c::before {
+    background-color: var(--primary-brand-color);
+    border-color: var(--primary-brand-color);
+    background-image: url('../images/checkmark.svg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.customers-check:focus + .contact-form-text-description-c::before {
+    outline: 1px solid var(--primary-brand-color);    
+}
+
+.modal-form-fake-chekbox {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--dark-color);
+    border-radius: 2px;
+}
+
+/* Text modal form description */
+.contact-form-text-description {
+    display: block;
+    /* font-weight: 400; */
+
+    /* padding-left: 8px; */
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    color: var(--subtle-text-color);
+}
+
+.contact-form-text-description-c {
+    display: flex;
+    align-items: center;
+    
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+}
+
+.modal-form-input-wrapper {
+    display: block;
+    position: relative;
+    
+}
+
+.contact-form-btm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    align-self: center;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--hero-text-color);
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: color var(--transition-var), background-color var(--transition-var);
+}
+
+.contact-form-btm:focus,
+.contact-form-btm:hover {
+    background-color: var(--pressed-state-color);
+    color: var(--accent-color)
+}
+
+.privacy-policy {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+}
