@@ -109,7 +109,12 @@ button {
     color: var(--text-color);
 }
 
-
+.small-text-laptop {
+    
+    font-size: 12px;
+    line-height: 1.16;
+    color: var(--text-color);
+}
 /* Body text style 2 */
 .medium-text {
     font-weight: 500;
@@ -289,7 +294,7 @@ button {
 .list {
     list-style: none;
 }
-/* ====================== Site Navigation ====================== */
+/* ============================================ Site Navigation ============================================ */
 
 /* ====================== Site Navigation Mobile 480 fool (396 container) ====================== */
 
@@ -297,7 +302,7 @@ button {
     /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /* --- Mobile container ---- */
@@ -312,16 +317,16 @@ button {
 @media  screen and (min-width: 768px) {
     .container {
         width: 736px;
-        background-color: tomato;
+        /* background-color: tomato; */
     }
 }
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1200px) {
     .container {
-        width: 1128px;
+        width: 1440px;
         padding-left: 156px;
         padding-right: 156px;
-        background-color: red;
+        /* background-color: red; */
     }
 }
 
@@ -342,9 +347,14 @@ button {
     .site-nav {
         display: none;
     }
-    .auth-nav {
+
+    .adress-nav {
         display: none;
     }
+
+    /* .auth-nav {
+        display: none;
+    } */
     
     .mobile-menu-open {
         background-color: transparent;
@@ -428,7 +438,7 @@ button {
 
     .site-nav {
         display: flex;
-        margin-left: 76px;
+        margin-left: 120px;
     }
 
     .site-nav .item + .item {
@@ -450,29 +460,75 @@ button {
 
     /* A highlighted link to the active page */
     .site-nav .carrent {
-    color: blue;
+        color: blue;
+    }
+
+    .site-nav-item {
+        display: block;
+    }
+
+    .site-nav-item {
+        position: relative;
+    }
+
+    .nav-index::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        margin: 0 auto; 
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-brand-color);
+        border-radius: 2px;
+    }
+
+    .auth-nav-laptop {
+        display: block;
+    }
+
+    .auth-nav {
+        display: none;  
+    }
+
+    .adress-nav {
+        margin-left: auto;
+        display: flex;
+        transition: color var(--transition-var);
+    }
 }
 
-.site-nav-item {
-    display: block;
-}
 
-.site-nav-item {
-    position: relative;
-}
+@media screen and (min-width: 1200px) {
 
-.nav-index::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin: 0 auto; 
-    left: 0;
-    bottom: 0;
-    background-color: var(--primary-brand-color);
-    border-radius: 2px;
-}
+    .site-nav {
+        margin-left: 76px;
+    }
+
+    .auth-nav-laptop {
+        display: none;
+    }
+
+    .auth-nav {
+        display: flex;  
+    }
+
+    .adress-nav .link:hover,
+    .adress-nav .link:focus {
+        color: var(--primary-brand-color);
+        
+    }
+     
+    .auth-nav .link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .auth-nav .item + .item {
+        margin-left: 40px;
+    }
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ USED +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -1201,22 +1257,5 @@ button {
     color: var(--primary-brand-color);
 }
 
-/* ================================== MID-WIDTH MAX-WIDTH ================================== */
 
-
-/* ================================== AND ================================== */
-
-
-/* ================================== OR ================================== */
-
-/* ================================== TYPES ================================== */
-/* 
-    all
-    screen
-    print
- */
-
-
-
-/* ================================== ORIENTATION ================================== */
 
