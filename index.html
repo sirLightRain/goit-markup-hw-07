@@ -25,7 +25,9 @@
         <div class="main-nav container">
             <nav class="main-nav">
                 <!-- ====================== logo created as a text ====================== -->
-                <a href="./index.html" class="link"><span class="logo-web">Web</span><span class="logo-studio-h">Studio</span></a>
+                <a href="./index.html" class="link page-header">
+                    <span class="logo-web">Web</span><span class="logo-studio-h">Studio</span>
+                </a>
             
                     <!-- ====================== Main page navigation ====================== -->
                     <ul class="site-nav link">
@@ -34,9 +36,8 @@
                         <li class="item"><a href="" class="link medium-text">Contacts</a></li>
                     </ul>
             </nav>
-                    
-                    <!-- ====================== Contacts ====================== -->
-            
+             
+            <!-- ====================== Contacts ====================== -->
             <address class="adress-nav">
                 
                     <ul class="auth-nav link">
@@ -45,16 +46,72 @@
                     </ul>
                 
             </address>
+
+            <!-- ====================== Mobile variant close buttom + menu ====================== -->  
+            <button type="button" class="mobile-menu-open" data-menu-open>
+                <svg class="mobile-menu-open_icon icon-mob" width="32" height="22">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button> 
         </div >
 
+        <!-- ====================== Mobile menu drop window ====================== --> 
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu_close-btn"  width="24" height="24" data-menu-close>
+                    <svg class="mobile-menu_close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-modal"></use>
+                    </svg>
+                </button>
+    
+                <!-- Mobile menu main nav -->
+                <ul>
+                    <li>
+                        <a href="">Main</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href="">Portfolio</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile menu mail + tel -->
+                <ul>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                </ul>
+    
+                <!-- Mobile menu social net -->
+                <ul>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                    <li>
+                        <a href="">Arba</a>
+                    </li>
+                </ul>
 
+            </div>   
+        </div>
     </header>
 
     <!-- ====================== Unique page content. ====================== -->
-    <main>
+    <!-- <main> -->
         
         <!-- ====================== Section 1. Hero. ====================== -->
-        <section class="section-double-pad bg-color-h  hero-bg">
+        <!-- <section class="section-double-pad bg-color-h  hero-bg">
             <div class="fool-title">
                 <h1 class="hero-title">Effective Solutions</h1>
                 <h1 class="hero-title">for Your Business</h1>
@@ -62,10 +119,10 @@
             
                 <button type="button" class="hero-button button-text" data-modal-open>Order Service</button>
             
-        </section>
+        </section> -->
 
         <!-- ====================== Section 2. Main fitures. ====================== -->
-        <section class="section-singl-pad">
+        <!-- <section class="section-singl-pad">
             <div class="container">
                 <h2 class="invisible"></h2>
 
@@ -122,40 +179,65 @@
 
                 </ul>                
             </div>
-        </section>
+        </section> -->
 
         <!-- ====================== Section 3. What are we doing. ====================== -->
-        <section class="section-double-pad element-direction">
+        <!-- <section class="section-double-pad element-direction">
             
                 
             
             <div class="container">
                 <h2 class="title-second main-text-style">What are we doing</h2>
                 <ul class="photo link">
-                    <li class="item"><img src="./images/monitor.jpg" alt="monitor" width="360" height="300"></li>
-                    <li class="item"><img src="./images/phone.jpg" alt="phone" width="360" height="300"></li>
-                    <li class="item"><img src="./images/phon-plus-laptop.jpg" alt="phone and laptop" width="360" height="300"></li>
+                    <li class="item">
+                        <img 
+                        srcset=""
+                        src="./images/monitor.jpg" 
+                        alt="monitor" 
+                        width="360" height="300"
+                        >
+                    </li>
+                    <li class="item">
+                        <img 
+                        srcset=""
+                        src="./images/phone.jpg" 
+                        alt="phone" 
+                        width="360" height="300"
+                        >
+                    </li>
+                    <li class="item">
+                        <img 
+                        srcset=""
+                        src="./images/phon-plus-laptop.jpg" 
+                        alt="phone and laptop" 
+                        width="360" height="300"
+                        >
+                    </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- ====================== Section 4. Our Team. ====================== -->
-        <section class="section-double-pad our-team-colors-bg">
+        <!-- <section class="section-double-pad our-team-colors-bg"> -->
             
                 
             <!-- Our Team cards -->
-            <div class="container">
+            <!-- <div class="container">
                 <h2 class="title-second">Our Team</h2>
                 <ul class="team-cards link">
 
                     <li class="item">
-                        <img src="./images/mark-guerrero.jpg" alt="Product Designer Mark Guerrero" width="264">
+                        <img 
+                            srcset=""
+                            src="./images/mark-guerrero.jpg" 
+                            alt="Product Designer Mark Guerrero" 
+                            width="264">
                         <div class="card-description">
                             <h3 class="title-third">Mark Guerrero</h3>
-                            <p class="small-text-icon">Product Designer</p>
+                            <p class="small-text-icon">Product Designer</p> -->
 
                             <!-- Our Team cards Icon -->
-                            <ul class="social-list list">
+                            <!-- <ul class="social-list list">
                                 <li class="social-list-iten">
                                     <a href="" class="social-list-link">
                                         <svg class="social-list-icon" width="16" height="16">
@@ -194,13 +276,17 @@
                     </li>
 
                     <li class="item">
-                        <img src="./images/tom-ford.jpg" alt="Frontend Developer Tom Ford" width="264">
+                        <img 
+                        srcset="" 
+                        src="./images/tom-ford.jpg" 
+                        alt="Frontend Developer Tom Ford" 
+                        width="264">
                         <div class="card-description">
                             <h3 class="title-third">Tom Ford</h3>
-                            <p class="small-text-icon">Frontend Developer</p>
+                            <p class="small-text-icon">Frontend Developer</p> -->
                             
                             <!-- Our Team cards Icon -->
-                            <ul class="social-list list">
+                            <!-- <ul class="social-list list">
                                 <li class="social-list-iten">
                                     <a href="" class="social-list-link">
                                         <svg class="social-list-icon" width="16" height="16">
@@ -239,13 +325,17 @@
                     </li>
 
                     <li class="item">
-                        <img src="./images/camila-garcia.jpg" alt="Marketing Camila Garcia" width="264">
+                        <img 
+                            srcset="" 
+                            src="./images/camila-garcia.jpg" 
+                            alt="Marketing Camila Garcia" 
+                            width="264">
                         <div class="card-description">
                             <h3 class="title-third">Camila Garcia</h3>
-                            <p class="small-text-icon">Marketing</p>
+                            <p class="small-text-icon">Marketing</p> -->
 
                             <!-- Our Team cards Icon -->
-                            <ul class="social-list list">
+                            <!-- <ul class="social-list list">
                                 <li class="social-list-iten">
                                     <a href="" class="social-list-link">
                                         <svg class="social-list-icon" width="16" height="16">
@@ -284,13 +374,17 @@
                     </li>
 
                     <li class="item">
-                        <img src="./images/daniel-wilson.jpg" alt="UI Designer Daniel Wilson" width="264">
+                        <img 
+                            srcset="" 
+                            src="./images/daniel-wilson.jpg" 
+                            alt="UI Designer Daniel Wilson" 
+                            width="264">
                         <div class="card-description">
                             <h3 class="title-third">Daniel Wilson</h3>
-                            <p class="small-text-icon">UI Designer</p>
+                            <p class="small-text-icon">UI Designer</p> -->
 
                             <!-- Our Team cards Icon -->
-                            <ul class="social-list list">
+                            <!-- <ul class="social-list list">
                                 <li class="social-list-iten">
                                     <a href="" class="social-list-link">
                                         <svg class="social-list-icon" width="16" height="16">
@@ -330,10 +424,10 @@
 
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- ====================== Section 5. Customers. ====================== -->
-        <section class="section-double-pad-long-up">
+        <!-- <section class="section-double-pad-long-up">
             <div class="container">
                 <h2 class="title-second">Customers</h2>
                 
@@ -391,10 +485,10 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
 
     <!-- ============================= Footer. ============================= -->
-    <footer class="section-f-double-pad bg-color-f">
+    <!-- <footer class="section-f-double-pad bg-color-f">
         
         <div class="container footer-box">
 
@@ -448,7 +542,7 @@
 
             <!-- ============================= Footer Subscribe form. ============================= -->
             
-            <div class="footer-subscribe-form">
+            <!-- <div class="footer-subscribe-form">
                 <p class="medium-text-footer-social">Subscribe</p>
                 <label class="footer-input-area">
                     
@@ -471,21 +565,21 @@
 
         </div>
           
-    </footer>
+    </footer>  -->
 
     <!-- ============================= Modal windov. ============================= -->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+    <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="modal"> -->
             
             <!-- ============================= Closing buttom. ============================= -->
-            <button type="button" class="modal-close-btm" data-modal-close>
+            <!-- <button type="button" class="modal-close-btm" data-modal-close>
                 <svg class="modal-close-btm-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-modal"></use>
                 </svg>
-            </button>
+            </button> -->
 
             <!-- ============================= Modal window contacts form. ============================= -->
-            <form class="contact-form">
+            <!-- <form class="contact-form">
                 <p class="medium-text-modal">Leave your contacts and we will call you back</p>
 
                 <label class="contact-form-label">
@@ -577,6 +671,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
