@@ -371,54 +371,142 @@ button {
 
     /* --- Mobile menu drop window styles ---- */
     .mobile-menu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    max-height: 796px;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        max-height: 796px;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
 
-    background-color: #fff;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        background-color: #fff;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
 
-    transition: opacity var(--transition-var), visibility var(--transition-var);
+        transition: opacity var(--transition-var), visibility var(--transition-var);
     }
 
     .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;  
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;  
     }
 
     .mobile-menu-container {
-    position: relative;
-    padding-left: 40px;
-    padding-top: 80px;
-    padding-bottom: 40px;
-        }
+        position: relative;
+        padding-left: 40px;
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
 
     .mobile-menu_close-btn {
-    position: absolute;
+        position: absolute;
 
-    /* border-radius: 50%; */
-    padding: 0px;
-    line-height: 0px;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    right: 24px;
-    background-color: var(--accent-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%; 
+        /* border-radius: 50%; */
+        padding: 0px;
+        line-height: 0px;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        top: 24px;
+        right: 24px;
+        background-color: var(--accent-color);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%; 
 
-    background-color: #fff;
+        background-color: #fff;
+    }
+
+    /* --- Mobile menu content styles ---- */
+
+    /* Nav menu ============= */
+    .drop-site-nav-item .carrent {
+        color: var(--pressed-state-color)
+    }
+    .drop-site-nav-text {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;  
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+
+        color: var(--dark-color);
+    }
+
+    .drop-site-nav-item + .drop-site-nav-item {
+        margin-top: 40px;
+    }
+
+    /* Phon + email ============= */
+    .drop-mobile-menu {
+        margin-top: 284px;
+    }
+
+    .mob-menu-item + .mob-menu-item {
+        margin-top: 40px;
+    }
+
+    .mob-text-style {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;    
+
+        color: var(--primary-brand-color);
+        transition: color var(--transition-var);
+    }
+    
+    .mob-text-style:hover,
+    .mob-text-style:focus {
+        color: var(--pressed-state-color)
+    }
+
+    .ema-text-style {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        color: var(--dark-color);
+    }
+
+    /* Social icons ============= */
+    .social-list-mob {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 48px;
+    }
+
+    .social-list-link-mob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        /* background-color: rgba(255, 255, 255, 0.1); */
+        background-color:var(--primary-brand-color);
+        transition: background-color var(--transition-var);
+    }
+    
+    .social-list-iten-mob {
+        display: flex;
+    }
+
+    .social-list-iten-mob + .social-list-iten-mob {
+        /* padding-left: 56px; */
+        /* justify-content: space-between; */
+    }
+
+    .social-list-link-mob:focus,
+    .social-list-link-mob:hover {
+        background-color: var(--pressed-state-color);    
     }
 }
 
