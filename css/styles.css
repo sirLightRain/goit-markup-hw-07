@@ -82,7 +82,7 @@ button {
 /* H2 style */
 .title-second {
     text-align: center;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 
     font-size: 36px;
     line-height: 1.11;
@@ -142,21 +142,6 @@ button {
     margin-bottom: 16px;
     color: var(--hero-text-color);
 }
-
-/* ====================== Universal Container ====================== */
-/* Desc-top container */
- /* .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px; 
-    padding-left: 15px;
-    padding-right: 15px;
-}  */
-
-.section-double-pad {
-    padding-top: 120px;
-    padding-bottom: 120px;
-} 
 
 .section-f-double-pad {
     padding-top: 100px;
@@ -324,7 +309,7 @@ button {
 
 /* =================================================== Все включно до 767 =================================================== */
 
-/* ================= Header для 767 включно і фіксація на 480 + Випадаюче меню мобільної навігації ================= */
+/* ================= Header для 767 + і фіксація на 480 + Випадаюче меню мобільної навігації ================= */
 .page-header {
     padding-top: 24px;
     padding-bottom: 22px;
@@ -466,7 +451,6 @@ button {
     /* --- Social icons --- */
     .social-list-mob {
         display: flex;
-        /* justify-content: space-between; */
         margin-top: 48px;
     }
 
@@ -477,7 +461,7 @@ button {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        /* background-color: rgba(255, 255, 255, 0.1); */
+
         fill: var(--hero-text-color);
         background-color:var(--primary-brand-color);
         transition: background-color var(--transition-var);
@@ -491,8 +475,46 @@ button {
     .social-list-link-mob:hover {
         background-color: var(--pressed-state-color);    
     }
+/* ================================== Hero.  для 767 включно  ================================== */
+/* --- Медіа правило для хіро до 767 включно --- */
+.section-double-pad {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
 
-/* ================================== Privilegis для 767 включно і фіксація на 480  ================================== */
+.bg-color-h {
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: var(--dark-color);
+}    
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;  
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob.jpg');
+    width: 100%;
+    max-width: 428px;
+    height: 432px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
+        }
+}
+/* ================================== Section 2. Privilegis для 767 включно і фіксація на 480  ================================== */
 .privil-list-link {
         display: none;
 }
@@ -517,6 +539,83 @@ button {
 .privil-list-item + .privil-list-item {
     margin-top: 72px;
 }
+/* ================================== Section 3. What are we doing. для 767 включно  ================================== */
+.element-direction-index {
+    display: none;
+}
+/* ================================== Section 4. Our Team. для 767 включно  ================================== */
+.section-our-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.team-cards {
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-cards .item + .item {
+    margin-top: 72px;
+}
+
+.card-description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-description > .title-third {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--dark-color);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+    transition: background-color var(--transition-var);
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+    background-color: var(--pressed-state-color);
+}
+
+.small-text-icon {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.social-list-icon {
+    fill: var(--light-colors);
+}
+/* ================================== Section 5. . для 767 включно  ================================== */
+
 /* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -593,6 +692,28 @@ button {
         display: flex;
         transition: color var(--transition-var);
     }
+    /* ================================== Hero. F 768+  ================================== */  
+    .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');;
+        max-width: 768px;
+        height: 436px;
+    }
+
+    .fool-title {
+        margin-bottom: 36px;
+    }
+
+    .hero-title {
+        font-size: 56px;        
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
+        } 
+    }
 
     /* ================================== Section 2. Fitures. для 768+  ================================== */
     .title-third {
@@ -601,7 +722,6 @@ button {
     
     .privil-list {
         display: flex;
-        /* outline: 1px solid red; */
         padding: 0px;
         margin: 0px;
         list-style: none;
@@ -617,15 +737,42 @@ button {
     .small-text {
         max-width: 396px;
     }
-    /* --- Робимо флtкс сітку з текстових блоків (картинки приховані) --- */
+    /* --- Робимо флекс сітку з текстових блоків (картинки приховані) --- */
     .privil-list > .privil-list-item {
-        /* outline: 1px solid teal; */
         flex-basis: calc(100% / 2 - 24px);
 
         margin-left: 24px;
         margin-top: 72px;
     }
+    /* ================================== Section 3. What are we doing. для 768+  ================================== */
     
+    /* ================================== Section 4. Our Team. для 768+  ================================== */
+
+    .team-cards .item + .item {
+        margin-top: 64px;
+    }
+
+    .team-cards {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        margin-left: -24px;
+        margin-top: -64px;
+        outline: 1px solid red;
+    }
+
+    .card-description {
+        width: 264px;
+    }
+
+    .team-cards > .item {
+        /* flex-basis: calc(100% / 2 - 24px); */
+        margin-left: 24px;
+        margin-top: 64px;
+        outline: 1px solid teal;
+    }
+
+    /* ================================== Section 5. Customers. для 768+  ================================== */
     
 }
 
@@ -659,110 +806,8 @@ button {
     .auth-nav .item + .item {
         margin-left: 40px;
     }
-    /* ================================== Section 2. Fitures. 1200+ ================================== */
 
-    .section-main-fitures {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
-
-    /* --- Блоки в ряд в секції привілегій (картинки приховані) --- */
-    .title-third {
-        margin-top: 0px;
-        margin-bottom: 8px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        /* text-align: left; */
-        color: var(--dark-color);
-    }
-
-    .privil-list {
-        flex-wrap: nowrap;
-    }
-
-    .privil-list > .privil-list-item {
-        /* outline: 1px solid teal; */
-        flex-basis: calc(100% / 2 - 24px);
-
-        margin-left: 24px;
-        /* margin-top: 72px; */
-    }
-}
-
-
-/* ================================================================== Hero. ================================================================== */
-/* --- Медіа правило для хіро до 767 включно --- */
-    .section-double-pad {
-        width: 100%;
-        padding-top: 112px;
-        padding-bottom: 112px;
-    }
-
-    .bg-color-h {
-        margin-left: auto;
-        margin-right: auto;
-        
-        /* padding-top: 188px;
-        padding-bottom: 188px; */
-        
-        background-color: var(--dark-color);
-    }    
-
-    .hero-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;  
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-    }
-
-    .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob.jpg');
-        width: 100%;
-        max-width: 428px;
-        height: 432px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-
-@media screen and (min-device-pixel-ratio: 2), 
-    screen and (min-resolution: 192dpi), 
-    screen and (min-resolution: 2dppx) {
-        .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
-        }
-}
-    
-/* --- Медіа правило для хіро до 768+ включно --- */   
-@media screen and (min-width: 768px) {
-
-    .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');;
-        max-width: 768px;
-        height: 436px;
-    }
-
-    .fool-title {
-        margin-bottom: 36px;
-    }
-
-    .hero-title {
-        font-size: 56px;        
-    }
-
-    @media screen and (min-device-pixel-ratio: 2), 
-    screen and (min-resolution: 192dpi), 
-    screen and (min-resolution: 2dppx) {
-        .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
-        } 
-    }
-}
-
-/* --- Медіа правило для хіро 1200+ включно --- */   
-@media screen and (min-width: 1200px) {
+    /* ================================== Hero. 1200+ ================================== */
     .hero-bg {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');;
         max-width: 1440px;
@@ -784,116 +829,92 @@ button {
         .hero-bg {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc@2x.jpg');
         } 
-}
-
-/* .hero-bg {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people.jpg);
-    width: 1440px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-} */
-
-/* ================================================================== Section 2. Privilegis. ================================================================== */
-
-/* .privil-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-} */
-
-@media screen and (min-width: 1200px) {
-
-    .privil-list-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 264px;
-        height: 112px;
-        margin-bottom: 8px;
-        background-color: var(--light-colors);
-        border-radius: 4px;
     }
-}
-/* Для дескотопу відображати іконки */
-/* .privil-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-    background-color: var(--light-colors);
-    border-radius: 4px;
-} */
+    /* ================================== Section 2. Fitures. 1200+ ================================== */
 
-/* ================================================================== Section 3. What are we doing. ================================================================== */
+    .section-main-fitures {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
-.photo {
-    display: flex;
-}
+    /* --- Блоки в ряд в секції привілегій (картинки приховані) --- */
+    .title-third {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: var(--dark-color);
+    }
 
-.photo .item + .item {
-    margin-left: 24px;
+    .privil-list {
+        flex-wrap: nowrap;
+        
+    }
+
+    .privil-list > .privil-list-item {
+        /* outline: 1px solid teal; */
+        /* flex-basis: calc(100% / 2 - 24px); */
+
+        margin-left: 24px;
+        /* margin-top: 72px; */
+    }
+ 
+    .privil-list-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 264px;
+            height: 112px;
+            margin-bottom: 8px;
+            background-color: var(--light-colors);
+            border-radius: 4px;
+    }
+    
+    /* ================================== Section 3. What are we doing. для 1200+  ================================== */
+    .photo {
+        display: flex;
+        margin-left: -16px;
+        outline: 2px solid black;
+    }
+
+    .photo .item + .item {
+        margin-left: 24px;
+    }
+
+    .element-direction-index {
+        display: flex;
+    }
+
+    .section-singl-pad {
+        padding-bottom: 120px;
+    }
+    /* ================================== Section 4. Our Team. для 1200+  ================================== */
+
+    .title-second {
+        outline: 1px solid red;
+    }
+    .section-our-team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-cards > .item {
+        
+        margin-left: 24px;
+        margin-top: 64px;
+    }
+
+    .team-cards {
+        flex-wrap: nowrap;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    /* ================================== Section 5. Customers. для 1200+  ================================== */
 }
 
 /* ================================================================== Section 4. Our Team. ================================================================== */
 
-.team-cards {
-    text-align: center;
-    display: flex;
-    
-}
-
-.team-cards .item + .item {
-    margin-left: 24px;
-}
-
-
-.card-description {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: #fff;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.social-list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
-
-.social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--primary-brand-color);
-    transition: background-color var(--transition-var);
-}
-
-.social-list-link:focus,
-.social-list-link:hover {
-    background-color: var(--pressed-state-color);
-}
-
-.small-text-icon {
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--text-color);
-    margin-bottom: 8px;
-}
-
-.social-list-icon {
-    fill: var(--light-colors);
-}
 /* ================================================================== Section 5. Customers. ================================================================== */
 
 .section-double-pad-long-up {
