@@ -153,10 +153,6 @@ button {
     padding-right: 15px;
 }  */
 
-.section-singl-pad {
-    padding-top: 120px;   
-}
-
 .section-double-pad {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -294,7 +290,6 @@ button {
 .list {
     list-style: none;
 }
-/* ============================================ HEDER + Site Navigation ============================================ */
 
 /* ++++++++++++++++++++++++++++ Універсальні контейнери для контенту на різних девайсах ++++++++++++++++++++++++++++ */
 .container {
@@ -327,6 +322,9 @@ button {
     }
 }
 
+/* =================================================== Все включно до 767 =================================================== */
+
+/* ================= Header для 767 включно і фіксація на 480 + Випадаюче меню мобільної навігації ================= */
 .page-header {
     padding-top: 24px;
     padding-bottom: 22px;
@@ -337,9 +335,6 @@ button {
     align-items: center;
     justify-content: space-between;
 }
-
-/* ================= Хедер для 767 включно і фіксація на 480 + Випадаюче меню мобільної навігації ================= */
-
     .site-nav {
         display: none;
     }
@@ -419,6 +414,7 @@ button {
     .drop-site-nav-item .carrent {
         color: var(--pressed-state-color)
     }
+
     .drop-site-nav-text {
         font-weight: 700;
         font-size: 36px;
@@ -486,10 +482,6 @@ button {
         background-color:var(--primary-brand-color);
         transition: background-color var(--transition-var);
     }
-    
-    /* .social-list-iten-mob {
-        display: flex;
-    } */
 
     .social-list-iten-mob + .social-list-iten-mob {
         margin-left: 56px;
@@ -499,7 +491,32 @@ button {
     .social-list-link-mob:hover {
         background-color: var(--pressed-state-color);    
     }
+
+/* ================================== Privilegis для 767 включно і фіксація на 480  ================================== */
+.privil-list-link {
+        display: none;
+}
+
+.title-third {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    
+    color: #2E2F42;
+}
+
+.section-main-fitures {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.privil-list-item + .privil-list-item {
+    margin-top: 72px;
+}
 /* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -577,6 +594,39 @@ button {
         transition: color var(--transition-var);
     }
 
+    /* ================================== Section 2. Fitures. для 768+  ================================== */
+    .title-third {
+        text-align: left;
+    }
+    
+    .privil-list {
+        display: flex;
+        /* outline: 1px solid red; */
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        flex-wrap: wrap;
+        margin-left: -24px;
+        margin-top: -72px;
+    }
+
+    .privil-list-item + .privil-list-item {
+        margin: 0px;
+    }
+
+    .small-text {
+        max-width: 396px;
+    }
+    /* --- Робимо флtкс сітку з текстових блоків (картинки приховані) --- */
+    .privil-list > .privil-list-item {
+        /* outline: 1px solid teal; */
+        flex-basis: calc(100% / 2 - 24px);
+
+        margin-left: 24px;
+        margin-top: 72px;
+    }
+    
+    
 }
 
 /* ================================== Хедер для 1200+ ================================== */
@@ -609,12 +659,40 @@ button {
     .auth-nav .item + .item {
         margin-left: 40px;
     }
+    /* ================================== Section 2. Fitures. 1200+ ================================== */
+
+    .section-main-fitures {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* --- Блоки в ряд в секції привілегій (картинки приховані) --- */
+    .title-third {
+        margin-top: 0px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        /* text-align: left; */
+        color: var(--dark-color);
+    }
+
+    .privil-list {
+        flex-wrap: nowrap;
+    }
+
+    .privil-list > .privil-list-item {
+        /* outline: 1px solid teal; */
+        flex-basis: calc(100% / 2 - 24px);
+
+        margin-left: 24px;
+        /* margin-top: 72px; */
+    }
 }
 
 
 /* ================================================================== Hero. ================================================================== */
 /* --- Медіа правило для хіро до 767 включно --- */
-
     .section-double-pad {
         width: 100%;
         padding-top: 112px;
@@ -683,14 +761,6 @@ button {
     }
 }
 
-/* --- ХОВАЄ МАЛЮНКИ ВСЕКЦІЇ ПРИВІЛЕГІЙ. Тут можу вказати найраніше, певно через каск4адність --- */
-@media screen and (max-width: 1199px) {
-
-    .privil-list-link {
-        display: none;
-    }
-}
-
 /* --- Медіа правило для хіро 1200+ включно --- */   
 @media screen and (min-width: 1200px) {
     .hero-bg {
@@ -727,11 +797,11 @@ button {
 
 /* ================================================================== Section 2. Privilegis. ================================================================== */
 
-.privil-list {
+/* .privil-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-}
+} */
 
 @media screen and (min-width: 1200px) {
 
