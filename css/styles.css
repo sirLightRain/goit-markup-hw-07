@@ -294,12 +294,11 @@ button {
 .list {
     list-style: none;
 }
-/* ============================================ Site Navigation ============================================ */
+/* ============================================ HEDER + Site Navigation ============================================ */
 
-/* ====================== Site Navigation Mobile 480 fool (396 container) ====================== */
-
+/* ++++++++++++++++++++++++++++ Універсальні контейнери для контенту на різних девайсах ++++++++++++++++++++++++++++ */
 .container {
-    width: 100%;
+    /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
     /* background-color: yellow; */
@@ -341,8 +340,7 @@ button {
     justify-content: space-between;
 }
 
-/* Хедер для менше 768 і фіксація на 480 + Випадаюче меню мобільної навігації*/
-@media screen and (max-width: 767px) {
+/* ================= Хедер для 767 включно і фіксація на 480 + Випадаюче меню мобільної навігації ================= */
 
     .site-nav {
         display: none;
@@ -351,10 +349,6 @@ button {
     .adress-nav {
         display: none;
     }
-
-    /* .auth-nav {
-        display: none;
-    } */
     
     .mobile-menu-open {
         background-color: transparent;
@@ -369,7 +363,7 @@ button {
         stroke: var(--dark-color);
     }
 
-    /* --- Mobile menu drop window styles ---- */
+    /* --- Mobile menu drop window styles --- */
     .mobile-menu {
         position: fixed;
         width: 100%;
@@ -423,7 +417,7 @@ button {
 
     /* --- Mobile menu content styles ---- */
 
-    /* Nav menu ============= */
+    /* --- Nav menu --- */
     .drop-site-nav-item .carrent {
         color: var(--pressed-state-color)
     }
@@ -441,7 +435,7 @@ button {
         margin-top: 40px;
     }
 
-    /* Phon + email ============= */
+    /* --- Phon + email --- */
     .drop-mobile-menu {
         margin-top: 284px;
     }
@@ -475,11 +469,10 @@ button {
         color: var(--dark-color);
     }
 
-    /* Social icons ============= */
+    /* --- Social icons --- */
     .social-list-mob {
         display: flex;
-        justify-content: space-between;
-
+        /* justify-content: space-between; */
         margin-top: 48px;
     }
 
@@ -495,16 +488,20 @@ button {
         transition: background-color var(--transition-var);
     }
     
-    .social-list-iten-mob {
+    /* .social-list-iten-mob {
         display: flex;
+    } */
+
+    .social-list-iten-mob + .social-list-iten-mob {
+        margin-left: 56px;
     }
 
     .social-list-link-mob:focus,
     .social-list-link-mob:hover {
         background-color: var(--pressed-state-color);    
     }
-}
-/* Хедер для 768+ */
+
+/* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
@@ -582,7 +579,7 @@ button {
     }
 }
 
-/* Хедер для 1200+ */
+/* ================================== Хедер для 1200+ ================================== */
 @media screen and (min-width: 1200px) {
 
     .site-nav {
@@ -616,8 +613,7 @@ button {
 
 
 /* ================================================================== Hero. ================================================================== */
-/* Медіа правило для хіро  */
-@media screen and (max-width: 767px) {
+/* Медіа правило для хіро до 767 включно */
 
     .section-double-pad {
         width: 100%;
@@ -636,13 +632,21 @@ button {
     }    
 
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people-mob.jpg);
-        /* width: 100%; */
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob.jpg');
+        width: 100%;
         max-width: 428px;
         height: 432px;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), 
+        screen and (min-resolution: 192dpi), 
+        screen and (min-resolution: 2dppx) {
+            .hero-bg {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
+            }
     }
 
     .hero-title {
@@ -652,7 +656,7 @@ button {
         letter-spacing: 0.02em;
         text-transform: capitalize;
     }
-}
+
 
 /* .hero-bg {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people.jpg);
