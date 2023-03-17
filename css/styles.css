@@ -76,7 +76,7 @@ button {
 }
 
 .fool-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 /* H2 style */
@@ -322,9 +322,7 @@ button {
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1200px) {
     .container {
-        width: 1440px;
-        padding-left: 156px;
-        padding-right: 156px;
+        width: 1128px;
         /* background-color: green; */
     }
 }
@@ -484,6 +482,7 @@ button {
         height: 40px;
         border-radius: 50%;
         /* background-color: rgba(255, 255, 255, 0.1); */
+        fill: var(--hero-text-color);
         background-color:var(--primary-brand-color);
         transition: background-color var(--transition-var);
     }
@@ -613,7 +612,7 @@ button {
 
 
 /* ================================================================== Hero. ================================================================== */
-/* Медіа правило для хіро до 767 включно */
+/* --- Медіа правило для хіро до 767 включно --- */
 
     .section-double-pad {
         width: 100%;
@@ -631,6 +630,14 @@ button {
         background-color: var(--dark-color);
     }    
 
+    .hero-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;  
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
+
     .hero-bg {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob.jpg');
         width: 100%;
@@ -641,22 +648,63 @@ button {
         background-size: cover;
     }
 
-    @media screen and (min-device-pixel-ratio: 2), 
-        screen and (min-resolution: 192dpi), 
-        screen and (min-resolution: 2dppx) {
-            .hero-bg {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
-            }
+@media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
+        }
+}
+
+/* --- Медіа правило для хіро до 768+ включно --- */   
+@media screen and (min-width: 768px) {
+
+    .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');;
+        max-width: 768px;
+        height: 436px;
+    }
+
+    .fool-title {
+        margin-bottom: 36px;
     }
 
     .hero-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;  
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
+        font-size: 56px;        
     }
 
+    @media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
+        } 
+}
+
+/* --- Медіа правило для хіро 1200+ включно --- */   
+@media screen and (min-width: 1200px) {
+    .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');;
+        max-width: 1440px;
+        height: 600px;
+    }
+
+    .fool-title {
+        margin-bottom: 48px;
+    }
+
+    .section-double-pad {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), 
+    screen and (min-resolution: 192dpi), 
+    screen and (min-resolution: 2dppx) {
+        .hero-bg {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc@2x.jpg');
+        } 
+}
 
 /* .hero-bg {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people.jpg);
