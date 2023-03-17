@@ -499,7 +499,7 @@ button {
     .social-list-link-mob:hover {
         background-color: var(--pressed-state-color);    
     }
-
+    
 /* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -576,6 +576,7 @@ button {
         display: flex;
         transition: color var(--transition-var);
     }
+
 }
 
 /* ================================== Хедер для 1200+ ================================== */
@@ -655,7 +656,7 @@ button {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
         }
 }
-
+    
 /* --- Медіа правило для хіро до 768+ включно --- */   
 @media screen and (min-width: 768px) {
 
@@ -679,6 +680,15 @@ button {
         .hero-bg {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
         } 
+    }
+}
+
+/* --- ХОВАЄ МАЛЮНКИ ВСЕКЦІЇ ПРИВІЛЕГІЙ. Тут можу вказати найраніше, певно через каск4адність --- */
+@media screen and (max-width: 1199px) {
+
+    .privil-list-link {
+        display: none;
+    }
 }
 
 /* --- Медіа правило для хіро 1200+ включно --- */   
@@ -718,13 +728,26 @@ button {
 /* ================================================================== Section 2. Privilegis. ================================================================== */
 
 .privil-list {
-    background-image: url(../images/hero/fon-pic-ofice-people-mob.jpg);
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.privil-list-link {
+@media screen and (min-width: 1200px) {
+
+    .privil-list-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        margin-bottom: 8px;
+        background-color: var(--light-colors);
+        border-radius: 4px;
+    }
+}
+/* Для дескотопу відображати іконки */
+/* .privil-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -733,7 +756,7 @@ button {
     margin-bottom: 8px;
     background-color: var(--light-colors);
     border-radius: 4px;
-}
+} */
 
 /* ================================================================== Section 3. What are we doing. ================================================================== */
 
@@ -1073,7 +1096,6 @@ button {
     top: 0px;
     left: 0px;
     
-
     width: 100%;
     height: 100%;
     background-color: var(--dark-color-rgba);
@@ -1090,7 +1112,6 @@ button {
 
 /* --- Стан, коли вікно modal показане --- */
 .modal {
-    
     position: absolute;
     top: 50%;
     left: 50%;
