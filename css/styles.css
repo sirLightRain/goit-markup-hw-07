@@ -1,6 +1,6 @@
-/* ====================== Stule Guide (colors) ====================== */
+/* ================================================================== Stule Guide (colors) ====================== */
 
-/* ====================== Оголошуємо змінні CSS ====================== */
+/* ================================================================== Оголошуємо змінні CSS ====================== */
 :root {
     --primary-brand-color: #4D5AE5;
     --primary-brand-color-a: rgba(64, 75, 191, 0.9);
@@ -20,7 +20,7 @@
     --transition-var: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-/* ====================== Body global stylea! ====================== */
+/* ================================================================== Body global stylea! ================================================================== */
 html {
     box-sizing: border-box;
 }
@@ -56,7 +56,7 @@ button {
     cursor: pointer;
 }
 
-/* ====================== Text Guide ====================== */
+/* ================================================================== Text Guide ================================================================== */
 
 /* Global main paramrters for text */
 .main-text-style {
@@ -145,13 +145,13 @@ button {
 
 /* ====================== Universal Container ====================== */
 /* Desc-top container */
-/* .container {
+ /* .container {
     margin-left: auto;
     margin-right: auto;
     width: 1158px; 
     padding-left: 15px;
     padding-right: 15px;
-} */
+}  */
 
 .section-singl-pad {
     padding-top: 120px;   
@@ -160,7 +160,7 @@ button {
 .section-double-pad {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+} 
 
 .section-f-double-pad {
     padding-top: 100px;
@@ -261,7 +261,7 @@ button {
 
 /* ====================== BG section Colors ====================== */
 /* Page header style */
-.bg-color-h {
+/* .bg-color-h {
     margin-left: auto;
     margin-right: auto;
     
@@ -269,7 +269,7 @@ button {
     padding-bottom: 188px;
     
     background-color: var(--dark-color);
-}
+} */
 
 .bg-color-f {      
     background-color: var(--dark-color);
@@ -299,10 +299,10 @@ button {
 /* ====================== Site Navigation Mobile 480 fool (396 container) ====================== */
 
 .container {
-    /* width: 100%; */
+    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-    /* background-color: aqua; */
+    /* background-color: yellow; */
 }
 
 /* --- Mobile container ---- */
@@ -326,7 +326,7 @@ button {
         width: 1440px;
         padding-left: 156px;
         padding-right: 156px;
-        /* background-color: red; */
+        /* background-color: green; */
     }
 }
 
@@ -341,7 +341,7 @@ button {
     justify-content: space-between;
 }
 
-/* All for 0-767px */
+/* Хедер для менше 768 і фіксація на 480 + Випадаюче меню мобільної навігації*/
 @media screen and (max-width: 767px) {
 
     .site-nav {
@@ -499,17 +499,12 @@ button {
         display: flex;
     }
 
-    .social-list-iten-mob + .social-list-iten-mob {
-        /* padding-left: 56px; */
-        /* justify-content: space-between; */
-    }
-
     .social-list-link-mob:focus,
     .social-list-link-mob:hover {
         background-color: var(--pressed-state-color);    
     }
 }
-
+/* Хедер для 768+ */
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
@@ -587,7 +582,7 @@ button {
     }
 }
 
-
+/* Хедер для 1200+ */
 @media screen and (min-width: 1200px) {
 
     .site-nav {
@@ -619,101 +614,59 @@ button {
     }
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ USED +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* .main-nav {
-    display: flex;
-    align-items: center; 
+
+/* ================================================================== Hero. ================================================================== */
+/* Медіа правило для хіро  */
+@media screen and (max-width: 767px) {
+
+    .section-double-pad {
+        width: 100%;
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .bg-color-h {
+        margin-left: auto;
+        margin-right: auto;
+        
+        /* padding-top: 188px;
+        padding-bottom: 188px; */
+        
+        background-color: var(--dark-color);
+    }    
+
+    .hero-bg {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people-mob.jpg);
+        /* width: 100%; */
+        max-width: 428px;
+        height: 432px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;  
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    }
 }
 
-.site-nav {
-    display: flex;
-    margin-left: 76px;
-}
-
-.site-nav .item + .item {
-    margin-left: 40px;
-}
-
-.site-nav .link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    transition: color var(--transition-var);
-    
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--primary-brand-color);    
-} */
-
-/* A highlighted link to the active page */
-/* .site-nav .carrent {
-    color: blue;
-}
-
-.site-nav-item {
-    display: block;
-}
-
-.site-nav-item {
-    position: relative;
-}
-
-.nav-index::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    margin: 0 auto; 
-    left: 0;
-    bottom: 0;
-    background-color: var(--primary-brand-color);
-    border-radius: 2px;
-} */
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ USED +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-/* ====================== Adress Activation ====================== */
-
-/* .adress-nav {
-    margin-left: auto;
-    display: flex;
-    transition: color var(--transition-var);
-}
-
-.adress-nav .link:hover,
-.adress-nav .link:focus {
-    color: var(--primary-brand-color);
-    
-}
-
-.auth-nav {
-    display: flex;
-}
-
-.auth-nav .link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.auth-nav .item + .item {
-    margin-left: 40px;
-} */
-/* ====================== Hero. ====================== */
-
-.hero-bg {
+/* .hero-bg {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/fon-pic-ofice-people.jpg);
     width: 1440px;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
+} */
 
-/* ====================== Section 2. Privilegis. ====================== */
+/* ================================================================== Section 2. Privilegis. ================================================================== */
 
 .privil-list {
+    background-image: url(../images/hero/fon-pic-ofice-people-mob.jpg);
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -730,7 +683,7 @@ button {
     border-radius: 4px;
 }
 
-/* ====================== Section 3. What are we doing. ====================== */
+/* ================================================================== Section 3. What are we doing. ================================================================== */
 
 .photo {
     display: flex;
@@ -740,7 +693,7 @@ button {
     margin-left: 24px;
 }
 
-/* ====================== Section 4. Our Team. ====================== */
+/* ================================================================== Section 4. Our Team. ================================================================== */
 
 .team-cards {
     text-align: center;
@@ -796,7 +749,7 @@ button {
 .social-list-icon {
     fill: var(--light-colors);
 }
-/* ====================== Section 5. Customers. ====================== */
+/* ================================================================== Section 5. Customers. ================================================================== */
 
 .section-double-pad-long-up {
     padding-top: 130px;
@@ -840,7 +793,7 @@ button {
     fill: var(--primary-brand-color);
 } 
 
-/* ====================== Footer. ====================== */
+/* ================================================================== Footer. ================================================================== */
 
 .logo-footer {
     padding-bottom: 16px;
@@ -952,7 +905,7 @@ button {
     background-color: var(--pressed-state-color);
 }
 
-/* ====================== Portfolio button menu navigation ====================== */
+/* ================================================================== Portfolio button menu navigation ================================================================== */
 
 .element-direction {
     flex-direction: column;
@@ -1023,7 +976,7 @@ button {
 .card-set .item .link:focus .overley {
     transform: translate(0, 0);
 }
-/* ====================== Portfolio cards ====================== */
+/* ================================================================== Portfolio cards ================================================================== */
 
 .card-set {
     display: flex;
@@ -1060,7 +1013,7 @@ button {
     margin-top: 48px;
 }
 
-/* ====================== Modal window! ====================== */
+/* ================================================================== Modal window! ================================================================== */
 
 .backdrop {
     position: fixed;
