@@ -50,6 +50,11 @@ ul, ol {
 img {
     display: block;
     margin-right: 0px;
+    /* border: 10px solid red; */
+}
+
+svg {
+    /* border: 10px solid red; */
 }
 
 button {
@@ -281,7 +286,7 @@ button {
     /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 
 /* --- Mobile container ---- */
@@ -296,14 +301,14 @@ button {
 @media  screen and (min-width: 768px) {
     .container {
         width: 736px;
-        /* background-color: tomato; */
+        background-color: tomato;
     }
 }
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1200px) {
     .container {
         width: 1128px;
-        /* background-color: green; */
+        background-color: green;
     }
 }
 
@@ -734,6 +739,10 @@ button {
         margin: 0px;
     }
 
+    .fitures-card-text-box {
+        width: 264px;
+    }
+
     .small-text {
         max-width: 396px;
     }
@@ -758,7 +767,7 @@ button {
         list-style: none;
         margin-left: -24px;
         margin-top: -64px;
-        outline: 1px solid red;
+        /* outline: 1px solid red; */
     }
 
     .card-description {
@@ -769,7 +778,7 @@ button {
         /* flex-basis: calc(100% / 2 - 24px); */
         margin-left: 24px;
         margin-top: 64px;
-        outline: 1px solid teal;
+        /* outline: 1px solid teal; */
     }
 
     /* ================================== Section 5. Customers. для 768+  ================================== */
@@ -848,18 +857,27 @@ button {
     }
 
     .privil-list {
+        display: flex;
         flex-wrap: nowrap;
-        
+        margin: 0px;
+        padding: 0px;
     }
 
     .privil-list > .privil-list-item {
         /* outline: 1px solid teal; */
-        /* flex-basis: calc(100% / 2 - 24px); */
-
-        margin-left: 24px;
+        /* flex-basis: content; */
+        margin-left: -16px;
         /* margin-top: 72px; */
     }
  
+    .privil-list-item {
+        width: 264px;
+    }
+
+    .privil-list-item + .privil-list-item {
+        margin-left: 24px;
+    }
+
     .privil-list-link {
             display: flex;
             justify-content: center;
@@ -901,14 +919,22 @@ button {
 
     .team-cards > .item {
         
-        margin-left: 24px;
-        margin-top: 64px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
     .team-cards {
         flex-wrap: nowrap;
         margin-left: 0px;
         margin-top: 0px;
+    }
+
+    .team-cards .item + .item {
+        margin-top: 0px;
+    }
+
+    .our-team-item + .our-team-item {
+        margin-left: 24px;
     }
     /* ================================== Section 5. Customers. для 1200+  ================================== */
 }
