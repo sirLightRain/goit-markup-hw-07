@@ -292,7 +292,7 @@ button {
 /* --- Mobile container ---- */
 @media  screen and (min-width: 480px) {
     .container {
-        width: 396px;
+        width: 428px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -300,15 +300,15 @@ button {
 /* --- Planshet container ---- */
 @media  screen and (min-width: 768px) {
     .container {
-        width: 736px;
-        background-color: tomato;
+        width: 768px;
+        background-color: rgb(169, 255, 71);
     }
 }
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1200px) {
     .container {
-        width: 1128px;
-        background-color: green;
+        width: 1160px;
+        background-color: rgb(197, 236, 246);
     }
 }
 
@@ -619,8 +619,64 @@ button {
 .social-list-icon {
     fill: var(--light-colors);
 }
-/* ================================== Section 5. . для 767 включно  ================================== */
+/* ================================== Section 5. Customers. для 767 включно  ================================== */
 
+.section-customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.customers-list {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* gap: 24px; */
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-top: -72px;
+}
+
+.customers-list-item {
+    display: flex;
+    /* gap: 16px; */
+}
+
+.customers-list > .customers-list-item {
+    flex-basis: calc(100% / 2 - 16px);
+    margin-left: 16px;
+    margin-top: 72px;
+}
+
+
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 88px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+    transition: border-color var(--transition-var);
+}
+
+.customers-list-icon {
+    fill: var(--subtle-text-color);
+    transition: fill var(--transition-var);
+}
+
+.customers-list-link:focus,
+.customers-list-link:hover {
+    border-color: var(--primary-brand-color);
+   
+}
+
+.customers-list-link:focus .customers-list-icon,
+.customers-list-link:hover .customers-list-icon {
+    fill: var(--primary-brand-color);
+} 
 /* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -740,7 +796,7 @@ button {
     }
 
     .fitures-card-text-box {
-        width: 264px;
+        width: 356px;
     }
 
     .small-text {
@@ -759,6 +815,10 @@ button {
 
     .team-cards .item + .item {
         margin-top: 64px;
+    }
+
+    .customers-list-link {
+        width: 168px;
     }
 
     .team-cards {
@@ -782,7 +842,29 @@ button {
     }
 
     /* ================================== Section 5. Customers. для 768+  ================================== */
+    .customers-list {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* gap: 24px; */
+        flex-wrap: wrap;
+        /* margin-left: -24px; */
+        margin-top: -72px;
+    }
     
+    .customers-list-item {
+        display: block;
+        max-width: 168px;
+    }
+    
+    .customers-list > .customers-list-item {
+        flex-basis: calc(100% / 3 - 2 * 24px);
+        margin-left: 24px;
+        margin-top: 72px;
+    }
 }
 
 /* ================================== Хедер для 1200+ ================================== */
@@ -859,23 +941,21 @@ button {
     .privil-list {
         display: flex;
         flex-wrap: nowrap;
-        margin: 0px;
         padding: 0px;
+        list-style: none;
     }
 
     .privil-list > .privil-list-item {
-        /* outline: 1px solid teal; */
-        /* flex-basis: content; */
-        margin-left: -16px;
-        /* margin-top: 72px; */
+        /* outline: 1px solid black; */
+        
     }
  
     .privil-list-item {
         width: 264px;
     }
 
-    .privil-list-item + .privil-list-item {
-        margin-left: 24px;
+    .fitures-card-text-box {
+        width: 264px;
     }
 
     .privil-list-link {
@@ -892,8 +972,8 @@ button {
     /* ================================== Section 3. What are we doing. для 1200+  ================================== */
     .photo {
         display: flex;
-        margin-left: -16px;
-        outline: 2px solid black;
+        /* margin-left: -16px; */
+        /* outline: 2px solid black; */
     }
 
     .photo .item + .item {
@@ -909,9 +989,10 @@ button {
     }
     /* ================================== Section 4. Our Team. для 1200+  ================================== */
 
-    .title-second {
+    /* .title-second {
         outline: 1px solid red;
-    }
+    } */
+
     .section-our-team {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -937,53 +1018,16 @@ button {
         margin-left: 24px;
     }
     /* ================================== Section 5. Customers. для 1200+  ================================== */
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .customers-list {
+        flex-wrap: nowrap;
+        margin-left: -24px;
+    }
 }
-
-/* ================================================================== Section 4. Our Team. ================================================================== */
-
-/* ================================================================== Section 5. Customers. ================================================================== */
-
-.section-double-pad-long-up {
-    padding-top: 130px;
-    padding-bottom: 120px;
-}
-
-.customers-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
-
-.customers-list-item {
-    display: flex;
-}
-
-.customers-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 168px;
-    height: 88px;
-    border: 1px solid var(--subtle-text-color);
-    border-radius: 4px;
-    transition: border-color var(--transition-var);
-}
-
-.customers-list-icon {
-    fill: var(--subtle-text-color);
-    transition: fill var(--transition-var);
-}
-
-.customers-list-link:focus,
-.customers-list-link:hover {
-    border-color: var(--primary-brand-color);
-   
-}
-
-.customers-list-link:focus .customers-list-icon,
-.customers-list-link:hover .customers-list-icon {
-    fill: var(--primary-brand-color);
-} 
 
 /* ================================================================== Footer. ================================================================== */
 
