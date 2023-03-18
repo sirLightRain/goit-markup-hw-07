@@ -140,7 +140,7 @@ button {
 
 /* Text style Footwr social media before list of icon */
 .medium-text-footer-social {
-    /* display: block; */
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -246,16 +246,6 @@ button {
 }
 
 /* ====================== BG section Colors ====================== */
-/* Page header style */
-/* .bg-color-h {
-    margin-left: auto;
-    margin-right: auto;
-    
-    padding-top: 188px;
-    padding-bottom: 188px;
-    
-    background-color: var(--dark-color);
-} */
 
 .bg-color-f {      
     background-color: var(--dark-color);
@@ -286,7 +276,7 @@ button {
     /* width: 100%; */
     padding-left: 16px;
     padding-right: 16px;
-    background-color: yellow;
+    background-color: rgb(68, 68, 7);
 }
 
 /* --- Mobile container ---- */
@@ -301,14 +291,14 @@ button {
 @media  screen and (min-width: 768px) {
     .container {
         width: 768px;
-        background-color: rgb(169, 255, 71);
+        background-color: rgb(111, 172, 42);
     }
 }
 /* --- Desctop container ---- */
 @media  screen and (min-width: 1200px) {
     .container {
         width: 1160px;
-        background-color: rgb(197, 236, 246);
+        background-color: rgb(57, 165, 192);
     }
 }
 
@@ -677,6 +667,141 @@ button {
 .customers-list-link:hover .customers-list-icon {
     fill: var(--primary-brand-color);
 } 
+
+/* ================================================================== Footer. 767 включно ================================================================== */
+
+.footer-box {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+
+.logo-f-size {
+    
+    padding-bottom: 72px;
+    text-align: center;
+}
+
+.logo-box {
+    display: flex;
+}
+
+.footer-text {
+    width: 268px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-box {
+    display: block;   
+}
+
+.foter-cosial-media {
+    
+    padding-bottom: 72px;
+}
+
+.medium-text-footer-social {
+    text-align: center;
+}
+
+.social-list-link-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-var);
+}
+
+.social-list-link-f:focus,
+.social-list-link-f:hover {
+    background-color: var(--success-color);    
+}
+
+.subscribe-form {
+    display: flex;
+    width: 25%;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #fff;
+    outline: 1px solid tomato;
+}
+
+/* Footer subscribe form */
+.footer-subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-input-btm-block {
+    display: flex;
+}
+
+.footer-input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-email-input {
+    position: relative;
+
+    width: 100%;
+    height: 40px;
+    
+    padding: 8px 16px;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    border: 1px solid #fff;
+    border-radius: 4px; 
+    color: #fff;
+    background-color: var(--dark-color);
+}
+
+.footer-email-input::placeholder {
+    color: #fff;
+}
+
+.subscribe-button {
+    display: flex;
+    /* margin-left: 24px; */
+    
+    min-width: 156px;
+    height: 40px;
+    align-self: center;
+    align-items: center;
+    padding: 16px 32px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em; 
+    color: var(--hero-text-color);
+    background-color: var(--primary-brand-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    fill: #fff;
+    transition: background-color var(--transition-var);
+}
+
+.subscribe-btm-icon {
+    margin-left: 16px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+}
 /* ================================== Хедер для 768+ ================================== */
 @media screen and (min-width: 768px) {
     .mobile-menu {
@@ -1029,117 +1154,7 @@ button {
     }
 }
 
-/* ================================================================== Footer. ================================================================== */
 
-.logo-footer {
-    padding-bottom: 16px;
-    display: block;
-}
-
-.footer-box {
-    display: flex;
-}
-
-.foter-cosial-media {
-    margin-left: 120px;
-}
-
-.social-list-link-f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color var(--transition-var);
-}
-
-.social-list-link-f:focus,
-.social-list-link-f:hover {
-    background-color: var(--success-color);    
-}
-
-.subscribe-form {
-    display: flex;
-    width: 25%;
-    height: 40px;
-    margin-top: 40px;
-    margin-left: 20px;
-    background-color: #fff;
-    outline: 1px solid tomato;
-}
-
-/* Footer subscribe form */
-.footer-subscribe-form {
-    display: flex;
-    flex-direction: column;
-    
-    margin-left: 88px;
-}
-
-.subscribe-input-btm-block {
-    display: flex;
-}
-
-.footer-input-area {
-    display: flex;
-}
-
-.footer-email-input {
-    position: relative;
-
-    min-width: 264px;
-    height: 40px;
-    
-    padding: 8px 16px;
-
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    border: 1px solid #fff;
-    border-radius: 4px; 
-    color: #fff;
-    background-color: var(--dark-color);
-}
-
-.footer-email-input::placeholder {
-    color: #fff;
-}
-
-.subscribe-button {
-    display: flex;
-    margin-left: 24px;
-    
-    min-width: 156px;
-    height: 40px;
-    align-self: center;
-    align-items: center;
-    padding: 16px 32px;
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em; 
-    color: var(--hero-text-color);
-    background-color: var(--primary-brand-color);
-    border: none;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    fill: #fff;
-    transition: background-color var(--transition-var);
-}
-
-.subscribe-btm-icon {
-    margin-left: 16px;
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-    background-color: var(--pressed-state-color);
-}
 
 /* ================================================================== Portfolio button menu navigation ================================================================== */
 
