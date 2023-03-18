@@ -163,7 +163,7 @@ button {
 }
 
 /* ======================= Клас, котрий вирізає з потоку і приховує ========================= */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -172,7 +172,20 @@ button {
     overflow: hidden;
     border: 0px;
     clip: rect(0 0 0 0);
-}
+} */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* ====================== main page hero button ====================== */
 
@@ -671,8 +684,6 @@ button {
 /* ================================================================== Footer. 767 включно ================================================================== */
 
 .footer-box {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -772,9 +783,8 @@ button {
 
 .subscribe-button {
     display: flex;
-    /* margin-left: 24px; */
     
-    min-width: 156px;
+    /* min-width: 165px; */
     height: 40px;
     align-self: center;
     align-items: center;
@@ -990,6 +1000,50 @@ button {
         margin-left: 24px;
         margin-top: 72px;
     }
+    /* ================================== Footer. для 768+  ================================== */
+    .footer-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-email-input {
+        margin-bottom: 0px;
+    }
+
+    .foter-cosial-media {
+        margin-left: 24px;
+    }
+
+    .footer-input-area {
+        flex-direction: row;
+    }
+
+    .medium-text-footer-social {
+        text-align: left;
+    }
+
+    .subscribe-button {
+        margin-left: 24px;
+
+    }
+
+    /* .subscribe-btm-icon {
+        margin-left: 24px;
+        padding-left: 16px;
+    } */
+
+    .footer-email-input {
+        width: 264px;
+    }
+
+    .logo-f-size {
+        /* outline: 1px solid black; */
+    }
+
+    .footer-subscribe-form {
+        /* outline: 1px solid black; */
+        width: 496px;
+    }
 }
 
 /* ================================== Хедер для 1200+ ================================== */
@@ -1069,11 +1123,6 @@ button {
         padding: 0px;
         list-style: none;
     }
-
-    .privil-list > .privil-list-item {
-        /* outline: 1px solid black; */
-        
-    }
  
     .privil-list-item {
         width: 264px;
@@ -1097,8 +1146,7 @@ button {
     /* ================================== Section 3. What are we doing. для 1200+  ================================== */
     .photo {
         display: flex;
-        /* margin-left: -16px; */
-        /* outline: 2px solid black; */
+        
     }
 
     .photo .item + .item {
@@ -1113,10 +1161,6 @@ button {
         padding-bottom: 120px;
     }
     /* ================================== Section 4. Our Team. для 1200+  ================================== */
-
-    /* .title-second {
-        outline: 1px solid red;
-    } */
 
     .section-our-team {
         padding-top: 120px;
@@ -1151,6 +1195,17 @@ button {
     .customers-list {
         flex-wrap: nowrap;
         margin-left: -24px;
+    }
+    /* ================================== Footer. для 1200+  ================================== */
+    .logo-f-size {
+        text-align: left;
+    }
+    .foter-cosial-media {
+        margin-left: 120px;
+    }
+    .footer-subscribe-form {
+        margin-left: 80px;
+        width: 450px;
     }
 }
 
