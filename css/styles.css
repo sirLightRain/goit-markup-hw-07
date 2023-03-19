@@ -351,7 +351,6 @@ button {
         position: fixed;
         width: 100%;
         height: 100%;
-        max-height: 796px;
         top: 0px;
         left: 0px;
         z-index: 100;
@@ -373,10 +372,13 @@ button {
     }
 
     .mobile-menu-container {
+        height: 100%;
         position: relative;
         padding-left: 40px;
         padding-top: 80px;
         padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-menu_close-btn {
@@ -401,6 +403,11 @@ button {
     /* --- Mobile menu content styles ---- */
 
     /* --- Nav menu --- */
+    .drop-site-nav-item {
+        display: flex;
+    }
+
+
     .drop-site-nav-item .carrent {
         color: var(--pressed-state-color)
     }
@@ -421,7 +428,8 @@ button {
 
     /* --- Phon + email --- */
     .drop-mobile-menu {
-        margin-top: 284px;
+        margin-top: auto;
+
     }
 
     .mob-menu-item + .mob-menu-item {
@@ -503,9 +511,8 @@ button {
 }
 
 .hero-bg {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');
     width: 100%;
-    max-width: 428px;
     height: 432px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -516,7 +523,7 @@ button {
     screen and (min-resolution: 192dpi), 
     screen and (min-resolution: 2dppx) {
         .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-mob@2x.jpg');
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
         }
 }
 /* ================================== Section 2. Privilegis для 767 включно і фіксація на 480  ================================== */
@@ -628,12 +635,7 @@ button {
 
 .customers-list {
     display: flex;
-    padding: 0px;
-    margin: 0px;
     list-style: none;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* gap: 24px; */
     flex-wrap: wrap;
     margin-left: -16px;
     margin-top: -72px;
@@ -641,7 +643,7 @@ button {
 
 .customers-list-item {
     display: flex;
-    /* gap: 16px; */
+    
 }
 
 .customers-list > .customers-list-item {
@@ -690,10 +692,6 @@ button {
     text-align: center;
 }
 
-.logo-box {
-    display: flex;
-}
-
 .footer-text {
     width: 268px;
     text-align: left;
@@ -703,6 +701,7 @@ button {
 
 .logo-box {
     display: block;   
+    text-align: center;
 }
 
 .foter-cosial-media {
@@ -887,8 +886,7 @@ button {
     }
     /* ================================== Hero. F 768+  ================================== */  
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');
-        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');
         height: 436px;
     }
 
@@ -904,7 +902,7 @@ button {
     screen and (min-resolution: 192dpi), 
     screen and (min-resolution: 2dppx) {
         .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc@2x.jpg');
         } 
     }
 
@@ -976,14 +974,13 @@ button {
     /* ================================== Section 5. Customers. для 768+  ================================== */
     .customers-list {
         display: flex;
-        padding: 0px;
-        margin: 0px;
+        
         list-style: none;
         flex-wrap: wrap;
         justify-content: center;
-        /* gap: 24px; */
+        
         flex-wrap: wrap;
-        /* margin-left: -24px; */
+        margin-left: -24px;
         margin-top: -72px;
     }
     
@@ -1001,6 +998,11 @@ button {
     .footer-box {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .logo-box {
+        /* display: block;    */
+        text-align: left;
     }
 
     .footer-email-input {
@@ -1187,9 +1189,11 @@ button {
     /* ================================== Footer. для 1200+  ================================== */
     .logo-f-size {
         text-align: left;
+        padding-bottom: 0px;
     }
     .foter-cosial-media {
         margin-left: 120px;
+        padding-bottom: 0px;
     }
     .footer-subscribe-form {
         margin-left: 80px;
@@ -1589,6 +1593,3 @@ button {
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
 }
-
-
-
