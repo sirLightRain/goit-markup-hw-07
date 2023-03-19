@@ -887,7 +887,7 @@ button {
     }
     /* ================================== Hero. F 768+  ================================== */  
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');
         max-width: 768px;
         height: 436px;
     }
@@ -1067,7 +1067,7 @@ button {
 
     /* ================================== Hero. 1200+ ================================== */
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');
         max-width: 1440px;
         height: 600px;
     }
