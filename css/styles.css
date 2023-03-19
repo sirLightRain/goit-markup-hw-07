@@ -511,7 +511,7 @@ button {
 }
 
 .hero-bg {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-tab.jpg');
     width: 100%;
     height: 432px;
     background-repeat: no-repeat;
@@ -523,7 +523,7 @@ button {
     screen and (min-resolution: 192dpi), 
     screen and (min-resolution: 2dppx) {
         .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-tab@2x.jpg');
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-tab@2x.jpg');
         }
 }
 /* ================================== Section 2. Privilegis для 767 включно і фіксація на 480  ================================== */
@@ -886,7 +886,7 @@ button {
     }
     /* ================================== Hero. F 768+  ================================== */  
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-desc.jpg');
         height: 436px;
     }
 
@@ -902,7 +902,7 @@ button {
     screen and (min-resolution: 192dpi), 
     screen and (min-resolution: 2dppx) {
         .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc@2x.jpg');
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-desc@2x.jpg');
         } 
     }
 
@@ -1069,7 +1069,7 @@ button {
 
     /* ================================== Hero. 1200+ ================================== */
     .hero-bg {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc.jpg');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-desc.jpg');
         max-width: 1440px;
         height: 600px;
     }
@@ -1087,7 +1087,7 @@ button {
     screen and (min-resolution: 192dpi), 
     screen and (min-resolution: 2dppx) {
         .hero-bg {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/fon-pic-ofice-people-desc@2x.jpg');
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero/fon-pic-ofice-people-desc@2x.jpg');
         } 
     }
     /* ================================== Section 2. Fitures. 1200+ ================================== */
